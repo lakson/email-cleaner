@@ -1,0 +1,70 @@
+.mat-card {
+    .mat-card-content {
+      position: relative;
+      padding: 2rem;
+      min-height: 170px; // Adjust height as your need
+    }
+    .company-logo {
+      padding-bottom: 24px;
+    }
+    .text {
+      position: relative;
+      font-size: 18px;
+      color: rgba(0,0,0, .64);
+      padding-bottom: 25px;
+      min-height: 100px;
+      margin: 0;
+      text-align: center;
+    }
+    .user-detail {
+      position: absolute;
+      bottom: 25px;
+      left: 32px;
+      right: 0;
+      margin: auto;
+      .user-photo {
+        float: left;
+        margin-right: 8px;
+      }
+      .user-title {
+        font-size: 1rem;
+        float: left;
+        width: calc(100% - 56px)
+      }
+      .user-subtitle {
+        float: left;
+      }
+    }
+    
+  }
+
+  .section-header{
+      h2{
+        text-align: center;
+        font-size: 35px;
+        padding-top: 40px;
+      }
+      p{
+          text-align: center;
+          font-size: 18px;
+      }
+  }
+
+  .service-head{
+      margin: 0 auto;
+      display: flex;
+        .mat-icon, h3{
+            display: inline-block;
+            text-align: center;
+        }
+
+        .mat-icon mat-icon{
+            font-size: 45px;
+        }
+
+        h3{
+            font-size: 25px;
+            padding: 0 0 0 25px;
+            margin-top: 7px;
+        }
+  }

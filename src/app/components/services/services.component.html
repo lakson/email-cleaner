@@ -1,0 +1,21 @@
+<section id="services-section" class="testimonials-section home-section" [ngClass]="{'light-gray': backgroundGray}">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{ 'Services' | translate}}</h2>
+        <p>{{ 'We provide you with all the features you need to help you have a clean email list' | translate}} </p>
+      </div>
+      <div fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="30px" style="padding: 0 5%">
+        <div fxFlex="33.33" *ngFor="let tm of services">
+            <mat-card class="p-0">
+                <mat-card-content class="">
+                  <div class="service-head">
+                      <div class="mat-icon"><mat-icon>{{ tm.logo }}</mat-icon></div>
+                      <h3 class="user-title">{{tm.title | translate}}</h3>
+                  </div>
+                  <p class="text">{{tm.text | translate}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+      </div>
+    </div>
+  </section>
